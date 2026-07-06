@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cmhgwvh1pu8cc"]
+
+[ext_resource type="Script" uid="uid://b7pcftys4nk0s" path="res://Scenes/Player.gd" id="1_kyqiw"]
+[ext_resource type="Texture2D" uid="uid://bv1qp4g2qf6pv" path="res://simple_guy-removebg-preview.png" id="2_gntrk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8bdhr"]
+
+[node name="Player" type="CharacterBody2D" unique_id=1800495585]
+script = ExtResource("1_kyqiw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1164043238]
+position = Vector2(4, 2)
+texture = ExtResource("2_gntrk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1263538766]
+position = Vector2(-25, 25.000004)
+scale = Vector2(13.324284, 23.03509)
+shape = SubResource("CircleShape2D_8bdhr")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=670103018]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1710428017]
+position = Vector2(-25, 25.000004)
+scale = Vector2(13.324284, 23.03509)
+shape = SubResource("CircleShape2D_8bdhr")

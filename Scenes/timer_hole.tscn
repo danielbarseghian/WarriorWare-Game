@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cqlsxyyjkjk2u"]
+
+[ext_resource type="Script" uid="uid://m7gri8mu0fau" path="res://timer_hole.gd" id="1_ngtto"]
+
+[node name="Node2D" type="Node2D" unique_id=260572609]
+script = ExtResource("1_ngtto")
+
+[node name="timer" type="RichTextLabel" parent="." unique_id=244561995]
+offset_right = 92.19
+offset_bottom = 91.77
+theme_override_colors/default_color = Color(0.007314352, 0.007314352, 0.0073143505, 1)
+theme_override_font_sizes/normal_font_size = 52
+text = "0.0"

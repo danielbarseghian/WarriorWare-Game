@@ -12,7 +12,8 @@ func _process(delta: float) -> void:
 
 # Start
 func _on_start_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/level_scene.tscn")
+	print("Change yes")
+	get_tree().change_scene_to_file("res://Scenes/timer_screen.tscn")
 
 # Settings
 func _on_settings_pressed() -> void:
