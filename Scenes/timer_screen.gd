@@ -10,7 +10,7 @@ extends Node2D
 
 var time
 
-func _ready() -> void:
+func _ready() -> void:	
 	await start_timer(5.0) # using the function created
 	
 	if Global.minigames_done < 3: # if you havent completed 3 minigames yet 
@@ -23,11 +23,15 @@ func _ready() -> void:
 # look for the scene titled `minigame_` and then whatever minigame number 
 # should be next. Make sure you name your minigame saves appropriately.
 
-	else:
-		get_tree().change_scene_to_file("res://scenes/title_screen.tscn") # changes your scene
+	else: # All was completed
+		get_tree().change_scene_to_file("res://Scenes/win.tscn") # changes your scene
 	
 
 func _process(delta: float) -> void: # runs EVERY FRAME
+	if Global.lives <= 0:
+		print("Change")
+		get_tree().change_scene_to_file("res://Scenes/lost.tscn")
+
 	match Global.lives: # asks or checks if lives is equal to one of 
 #these values, cool hack. by the way this is a horrid way to illustrate the 
 #lives visually so later you can always find alternative code. Now, dw abt it.

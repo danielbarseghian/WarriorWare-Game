@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dgu7n8cre8eqn"]
+
+[node name="Node2D" type="Node2D" unique_id=1775499811]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=866041934]
+offset_right = 1164.0
+offset_bottom = 648.0
+theme_override_font_sizes/normal_font_size = 216
+text = "You lost"
