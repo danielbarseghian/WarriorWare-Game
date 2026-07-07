@@ -1,9 +1,39 @@
 [gd_scene format=3 uid="uid://dgu7n8cre8eqn"]
 
+[ext_resource type="Script" uid="uid://danlqtt42ja50" path="res://Scenes/Restart_button.gd" id="1_d3fw6"]
+
 [node name="Node2D" type="Node2D" unique_id=1775499811]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=866041934]
-offset_right = 1164.0
-offset_bottom = 648.0
+[node name="Background" type="ColorRect" parent="." unique_id=1243441154]
+offset_right = 1167.0
+offset_bottom = 665.0
+color = Color(0.84313726, 0, 0, 1)
+
+[node name="Titile" type="RichTextLabel" parent="." unique_id=866041934]
+offset_left = 129.0
+offset_top = 13.0
+offset_right = 1026.0
+offset_bottom = 344.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 216
 text = "You lost"
+
+[node name="Motivational quote" type="RichTextLabel" parent="." unique_id=1301800038]
+offset_left = 251.0
+offset_top = 320.0
+offset_right = 835.0
+offset_bottom = 421.0
+theme_override_colors/default_color = Color(0.42621174, 0.42621168, 0.42621166, 1)
+theme_override_font_sizes/normal_font_size = 52
+text = "how did you even lose "
+
+[node name="Button" type="Button" parent="." unique_id=1778873959]
+offset_left = 313.0
+offset_top = 475.0
+offset_right = 751.0
+offset_bottom = 552.0
+theme_override_font_sizes/font_size = 50
+text = "Title Screen"
+script = ExtResource("1_d3fw6")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

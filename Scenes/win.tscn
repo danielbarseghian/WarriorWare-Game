@@ -1,9 +1,38 @@
 [gd_scene format=3 uid="uid://cxysk22srfdbp"]
 
+[ext_resource type="Script" uid="uid://cnr8cydpx2ips" path="res://Scenes/win_button.gd" id="1_j84t1"]
+
 [node name="Node2D" type="Node2D" unique_id=45244031]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1452491926]
-offset_right = 1179.0
-offset_bottom = 661.0
+[node name="Background" type="ColorRect" parent="." unique_id=762127560]
+offset_right = 1167.0
+offset_bottom = 696.0
+color = Color(0, 0.6814383, 0.016326528, 1)
+
+[node name="title" type="RichTextLabel" parent="." unique_id=1452491926]
+offset_left = 44.0
+offset_top = 3.0
+offset_right = 1148.0
+offset_bottom = 341.0
 theme_override_font_sizes/normal_font_size = 216
-text = "WIN"
+text = "YOU WON"
+
+[node name="MOtivational" type="RichTextLabel" parent="." unique_id=1078666899]
+offset_left = 292.0
+offset_top = 329.0
+offset_right = 972.0
+offset_bottom = 469.0
+theme_override_colors/default_color = Color(0.3403393, 0.34033933, 0.3403393, 1)
+theme_override_font_sizes/normal_font_size = 50
+text = "you can become a pro"
+
+[node name="Button" type="Button" parent="." unique_id=308942198]
+offset_left = 330.0
+offset_top = 486.0
+offset_right = 749.0
+offset_bottom = 588.0
+theme_override_font_sizes/font_size = 50
+text = "title screen"
+script = ExtResource("1_j84t1")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

@@ -1,3 +1,29 @@
 [gd_scene format=3 uid="uid://dsjem2drs2c78"]
 
+[ext_resource type="Script" uid="uid://c20m2bco4rl8y" path="res://Scenes/Back.gd" id="1_4hxq3"]
+
 [node name="Node2D" type="Node2D" unique_id=1147512520]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=240508308]
+offset_right = 1167.0
+offset_bottom = 655.0
+color = Color(0.360322, 0.36032203, 0.360322, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=547035291]
+offset_left = 301.0
+offset_top = 254.0
+offset_right = 859.0
+offset_bottom = 366.0
+theme_override_font_sizes/normal_font_size = 52
+text = "Coming soon (never)"
+
+[node name="Button" type="Button" parent="." unique_id=479427201]
+offset_left = 352.0
+offset_top = 537.0
+offset_right = 784.0
+offset_bottom = 608.0
+theme_override_font_sizes/font_size = 50
+text = "Back"
+script = ExtResource("1_4hxq3")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
