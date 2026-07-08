@@ -33,7 +33,7 @@ offset_top = 475.0
 offset_right = 751.0
 offset_bottom = 552.0
 theme_override_font_sizes/font_size = 50
-text = "Title Screen"
+text = "Quit"
 script = ExtResource("1_d3fw6")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
